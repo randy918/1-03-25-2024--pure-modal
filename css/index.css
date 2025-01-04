@@ -1,0 +1,11 @@
+.modal {
+  padding: 2vw;
+  max-width: 80vw;
+}
+.modal > * {
+  margin: 0 0.5rem 0;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}/*# sourceMappingURL=index.css.map */
