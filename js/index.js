@@ -46,7 +46,17 @@ modal.showModal();
 modal.close();
     })
 
-
+   modal. addEventListener ("click", e => {
+    const dialogDimensions = modal.getBoundingClientRect()
+    if (
+    e.client < dialogDimensions.left ||
+    e.client > dialogDimensions.right ||
+    e.clientY < dialogDimensions.top ||
+    e.clientY > dialogDimensions.bottom
+    ) {
+    modal.close()
+    }
+    })
 
 
 
