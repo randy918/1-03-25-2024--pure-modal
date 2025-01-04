@@ -1,8 +1,9 @@
 .modal {
   padding: 2vw;
   max-width: 80vw;
+  transition: opacity 0.3s ease;
 }
-transition .modal > * {
+.modal > * {
   margin: 0 0.5rem 0;
 }
 
